@@ -1,0 +1,31 @@
+body {
+  direction: ltr;
+  color: #3C4858;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.btn-green{
+  background-color: #266A2E;
+  &:hover{
+    background-color: #0C4D33;
+  }
+}
+
+#main-banner{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../resources/main_background.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 75vh;
+  margin-bottom: -5vh;
+  .jumbotron{
+    background-color: transparent;
+  }
+}
+
+#image-gallery{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../resources/image_gallery_background.jpg');
+}

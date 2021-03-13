@@ -1,0 +1,24 @@
+{
+  "name": "navonigiardini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "glupfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palmyr/navonigiardini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palmyr/navonigiardini/issues"
+  },
+  "homepage": "https://github.com/palmyr/navonigiardini#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
