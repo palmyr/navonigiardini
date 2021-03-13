@@ -4,6 +4,7 @@ $( document ).ready(function() {
         loop:true,
         margin:10,
         nav:true,
+        navigation : false,
         responsive:{
             0:{
                 items:1
@@ -15,5 +16,10 @@ $( document ).ready(function() {
                 items:3
             }
         }
+    })
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
     })
 });

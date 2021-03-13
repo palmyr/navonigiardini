@@ -15,6 +15,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.owl-prev,
+.owl-next {
+  display: none;
+}
+
+.text-lighter{
+  color: #5D5D5D
+}
+
+.spacer{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 #main-banner{
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../resources/main_background.jpg');
   background-size: cover;
@@ -26,6 +40,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#main-content{
+  border-radius: 6px 6px 0 0;
+}
+
 #image-gallery{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../resources/image_gallery_background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../resources/image_gallery_background.jpg');
+}
+
+#contact{
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../resources/image_gallery_background.jpg');
 }
