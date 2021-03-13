@@ -6,7 +6,7 @@ gulp.task('scss', function(){
     return gulp.src('./scss/import.scss')
         .pipe(sass())
         .pipe(concat('./style.css'))
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('docs/css'))
 });
 
 gulp.task('watch', function(){
