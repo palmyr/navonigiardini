@@ -4,16 +4,18 @@
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>navonigiardini</title>
+    <title>navonigiardini.com</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -56,10 +58,10 @@
         </div>
     </div>
 </div>
-<div class="px-5">
+<div class="px-4">
     <div id="main-content" class="container-fluid shadow-lg">
         <div id="image-gallery" class="row">
-            <div class="container">
+            <div class="container py-5">
                 <div class="row justify-content-md-center">
                     <div class="col-md-12 owl-carousel owl-theme text-light">
                         <div class="item p-5">
@@ -79,31 +81,82 @@
         <div id="services" class="container spacer">
             <div class="row text-center">
                 <div class="col-md-12 mb-5">
-                    <h2 class="font-weight-bold">I nostri servizi</h2>
-                    <h5>Realizzazione e manutenzione aree verdi, parchi e giardini</h5>
+                    <h2 class="font-weight-bold title h1 mb-2">I nostri servizi</h2>
+                    <h6 class="text-muted">Realizzazione e manutenzione aree verdi, parchi e giardini</h6>
                 </div>
                 <div class="col-md-4 p-2">
-                    <h5 class="font-weight-bold">Impianti di irrigazione</h5>
-                    <p>Realizzazione e manutenzione impianti di irrigazione</p>
+                    <h5 class="font-weight-bold title">Impianti di irrigazione</h5>
+                    <p class="text-muted">Realizzazione e manutenzione impianti di irrigazione</p>
                 </div>
                 <div class="col-md-4 p-2">
-                    <h5 class="font-weight-bold">Alberi e arbusti</h5>
-                    <p>Messa a dimora, potatura e abbattimento, difesa fitosanitaria alberi e arbusti</p>
+                    <h5 class="font-weight-bold title">Alberi e arbusti</h5>
+                    <p class="text-muted">Messa a dimora, potatura e abbattimento, difesa fitosanitaria alberi e arbusti</p>
                 </div>
                 <div class="col-md-4 p-2">
-                    <h5 class="font-weight-bold">Tappeti erbosi</h5>
-                    <p>Realizzazione e manutenzione tappeti erbosi (semina, trasemina, zollatura, concimazione, diserbo selettivo, difesa fitosanitaria)</p>
+                    <h5 class="font-weight-bold title">Tappeti erbosi</h5>
+                    <p class="text-muted">Realizzazione e manutenzione tappeti erbosi (semina, trasemina, zollatura, concimazione, diserbo selettivo, difesa fitosanitaria)</p>
                 </div>
             </div>
         </div>
         <div id="contact" class="row">
-            <div class="container text-light">
+            <div class="container text-light py-5">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h5>Contatti</h5>
+                    <div class="col-md-6">
+                        <h4 class="title font-weight-bold h1 mb-5">Contatti</h4>
+                        <div class="contact-us-section">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <div class="text-content">
+                                <h5 class="title font-weight-bold h4 mb-4">Indirizzo</h5>
+                                <p>Frazione Gombaz 12</p>
+                                <p>11020 Torgnon (AO)</p>
+                            </div>
+                        </div>
+                        <div class="contact-us-section">
+                            <i class="fa fa-mobile mr-2"></i>
+                            <div class="text-content">
+                                <h5 class="title font-weight-bold">Chiamaci</h5>
+                                <p>Luigi Navoni</p>
+                                <p>3489309034</p>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="col-md-12"></div>
+                    <div class="col-md-6">
+                        <form>
+
+                            <div class="form-items bg-light px-5 pb-5 rounded">
+                                <div class="form-title item-linear-gradient title rounded">
+                                    <h5 class="p-3 font-weight-bold">Scrivici</h5>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div>
+                                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                                </div>
+                                <div>
+                                    <div class="btn item-linear-gradient">INVIA MESSAGGIO</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div id="footer" class="row">
+            <div class="col-md-12 py-3 bg-dark text-center text-light">
+                <p>made by <a href="https://ryanshanepalm.com">ryanshanepalm.com</a></p>
             </div>
         </div>
     </div>

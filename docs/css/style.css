@@ -6,10 +6,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif; }
 
+.title {
+  font-family: "Roboto Slab", "Times New Roman", serif; }
+
 .btn-green {
   background-color: #266A2E; }
   .btn-green:hover {
     background-color: #0C4D33; }
+
+.rounded {
+  border-radius: 6px; }
 
 .owl-prev,
 .owl-next {
@@ -23,19 +29,42 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8rem; }
 
 #main-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/main_background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/main_background.jpg"), 50% 50%;
   background-size: cover;
-  background-position: 50% 50%;
   height: 75vh;
   margin-bottom: -5vh; }
   #main-banner .jumbotron {
     background-color: transparent; }
 
 #main-content {
-  border-radius: 6px 6px 0 0; }
+  border-radius: 6px 6px 0 0;
+  overflow-y: hidden; }
 
 #image-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/image_gallery_background.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/image_gallery_background.jpg"), 50% 50%;
+  background-size: cover; }
 
 #contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/image_gallery_background.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/contact_us_background.jpg"), 50% 50%;
+  background-size: cover; }
+  #contact .contact-us-section i {
+    font-size: 1.5rem;
+    vertical-align: top; }
+  #contact .contact-us-section .text-content {
+    display: inline-block; }
+    #contact .contact-us-section .text-content p {
+      color: #CCCCCC; }
+
+.item-linear-gradient {
+  background: linear-gradient(60deg, #266A2E, #0C4D33); }
+  .item-linear-gradient.btn {
+    color: #ffffff; }
+    .item-linear-gradient.btn:hover {
+      background: #0C4D33; }
+
+#contact .form-title {
+  text-align: center;
+  transform: translateY(-25%); }
+
+#footer a {
+  color: #3C4858; }
