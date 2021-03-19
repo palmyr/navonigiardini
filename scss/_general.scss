@@ -14,8 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-green{
   background-color: #266A2E;
+  color: $white;
   &:hover{
     background-color: #0C4D33;
+    color: $white;
   }
 }
 
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   .contact-us-section{
     i{
-      font-size: 1.5rem;
+      font-size: 2rem;
       vertical-align: top;
     }
     .text-content{
@@ -76,12 +78,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-linear-gradient{
   background: linear-gradient(60deg, #266A2E, #0C4D33);
-  &.btn{
-    color: $white;
-    &:hover{
-      background: #0C4D33;
-    }
-  }
 }
 
 #contact{

@@ -10,9 +10,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", "Times New Roman", serif; }
 
 .btn-green {
-  background-color: #266A2E; }
+  background-color: #266A2E;
+  color: #ffffff; }
   .btn-green:hover {
-    background-color: #0C4D33; }
+    background-color: #0C4D33;
+    color: #ffffff; }
 
 .rounded {
   border-radius: 6px; }
@@ -48,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/contact_us_background.jpg"), 50% 50%;
   background-size: cover; }
   #contact .contact-us-section i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     vertical-align: top; }
   #contact .contact-us-section .text-content {
     display: inline-block; }
@@ -57,10 +59,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-linear-gradient {
   background: linear-gradient(60deg, #266A2E, #0C4D33); }
-  .item-linear-gradient.btn {
-    color: #ffffff; }
-    .item-linear-gradient.btn:hover {
-      background: #0C4D33; }
 
 #contact .form-title {
   text-align: center;
