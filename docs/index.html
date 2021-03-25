@@ -122,30 +122,33 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form>
+                        <form method="post">
                             <div class="form-items bg-light px-5 pb-4 rounded">
                                 <div class="form-title item-linear-gradient title rounded">
                                     <h5 class="p-3 font-weight-bold">Scrivici</h5>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Cognome e Nome" required>
                                     </div>
-                                    <div class="form-group col-lg-6"">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <div class="form-group col-lg-6">
+                                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="text" class="form-control" name="object" aria-describedby="emailHelp" placeholder="Oggetto" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" name="message" rows="3" placeholder="Messaggio" required></textarea>
                                 </div>
                                 <div class="form-group d-flex">
-                                    <div class="g-recaptcha ml-auto" data-sitekey="your_site_key"></div>
+                                    <div class="g-recaptcha ml-auto" data-sitekey="6Ld9OIcaAAAAAPgGEgj2mtIMp3rPOSRKQ1mAYdYL"></div>
                                 </div>
                                 <div class="text-right mt-4">
-                                    <div class="btn btn-green">INVIA MESSAGGIO</div>
+                                    <input type="submit" value="INVIA MESSAGGIO" class="btn btn-green">
+                                </div>
+                                <div id="form-message">
+
                                 </div>
                             </div>
                         </form>

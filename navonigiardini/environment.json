@@ -1,0 +1,7 @@
+{
+  "Parameters": {
+    "SENDER": "rspalm@bigpond.com",
+    "CAPTCHA_SECRET": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+    "AWS_REGION": "eu-west-1"
+  }
+}
