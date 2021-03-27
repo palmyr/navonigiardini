@@ -1,5 +1,5 @@
 {
-  "body": "{\"g-recaptcha-response\": \"6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe2\", \"recipient\": \"palmyr100@hotmail.com\", \"message\": \"Hello world!\", \"subject\": \"test message\"}",
+  "body": "{\"g-recaptcha-response\": \"6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe2\", \"recipient\": \"palmyr100@hotmail.com\", \"message\": \"Hello world!\", \"subject\": \"test message\", \"name\": \"pippo\"}",
   "resource": "/{proxy+}",
   "path": "/path/to/resource",
   "httpMethod": "POST",

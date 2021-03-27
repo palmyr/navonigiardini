@@ -10,25 +10,66 @@ Globals:
   Function:
     Timeout: 30
 
+Parameters:
+
+  CaptchaSecret:
+    Type: String
+    Description: 'Google captcha secret'
+
+  Sender:
+    Type: String
+    Description: 'What email address to send emails from'
+
+  Domain:
+    Type: String
+    Description: 'The domain name to use'
+
+  Certificate:
+    Type: String
+    Description: 'The certificate arn to use'
+
 Resources:
+
+  DomainName:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      RegionalCertificateArn: !Ref Certificate
+      DomainName: !Ref Domain
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+
   SendMailFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: recaptcha/
       Handler: app.lambda_handler
       Runtime: python3.8
+      Policies:
+        - arn:aws:iam::483125965873:policy/SESSendMailPolicy
       Environment:
         Variables:
-          CAPTCHA_SECRET: ''
-          SENDER: ''
-          AWS_REGION: ''
-
+          CAPTCHA_SECRET: !Ref CaptchaSecret
+          SENDER: !Ref Sender
+          AWS_SES_REGION: !Sub '${AWS::Region}'
       Events:
         SendMail:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /send/mail
             Method: post
+
+  UrlMapping:
+    Type: AWS::ApiGateway::BasePathMapping
+    DependsOn:
+      - DomainName
+      - SendMailFunction
+    Properties:
+      DomainName:
+        Ref: DomainName
+      RestApiId:
+        Ref: ServerlessRestApi
+      Stage: Prod
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
