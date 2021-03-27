@@ -1,3 +1,4 @@
 .idea/
 node_modules/
 navonigiardini/.aws-sam/
+navonigiardini/samconfig.toml
