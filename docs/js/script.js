@@ -26,6 +26,8 @@ $( document ).ready(function() {
     $("#contact form").on("submit", function(event){
         event.preventDefault();
 
+        const $form=$(this)
+
         const $spinner = $('#spinner .spinner-container');
 
         $spinner.show()
@@ -40,6 +42,7 @@ $( document ).ready(function() {
         });
 
         $.ajax({
+            form: $form,
             type: 'post',
             url: url,
             crossDomain: true,
@@ -49,15 +52,22 @@ $( document ).ready(function() {
                 "accept": "application/json"
             },
             success: function (data) {
-                $("#form-message").html("<div class=\"alert alert-success\">Thank you for your message</div>");
+                $("#form-message").html("<div class=\"alert alert-success\">Grazie per il messaggio, vi risponderemo a breve.</div>");
+                this.form[0].reset()
+                grecaptcha.reset();
                 $spinner.hide();
             },
             error: function (data) {
-                $("#form-message").html("<div class=\"alert alert-danger\">Error</div>");
+                $("#form-message").html("<div class=\"alert alert-danger\">Il messaggio non e` stato inviato, vi chiediamo cortesemente di scrivere a luigi.navoni@alice.it</div>");
                 $spinner.hide();
             },
         });
     });
 
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
 
 });

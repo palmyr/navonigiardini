@@ -19,22 +19,22 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Navonigiardini.com</a>
+        <a class="navbar-brand" href="/">Navonigiardini.com</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galleria fotografica</a>
+                    <a class="nav-link" href="#image-gallery">Galleria fotografica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">I nostri servizi</a>
+                    <a class="nav-link" href="#services">I nostri servizi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contatti</a>
+                    <a class="nav-link" href="#contact">Contatti</a>
                 </li>
             </ul>
         </div>
@@ -70,8 +70,13 @@
                             </a>
                         </div>
                         <div class="item p-5">
-                            <a href="resources/slide2.jpg" data-lightbox="image-1" data-title="My caption">
+                            <a href="resources/slide2.jpg" data-lightbox="image-2" data-title="My caption">
                                 <img src="resources/slide2_thumbnail.jpg" alt="slide2" class="rounded">
+                            </a>
+                        </div>
+                        <div class="item p-5">
+                            <a href="resources/slide3.jpg" data-lightbox="image-3" data-title="My caption">
+                                <img src="resources/slide3_thumbnail.jpg" alt="slide2" class="rounded">
                             </a>
                         </div>
                     </div>
@@ -104,7 +109,7 @@
                     <div class="col-md-6">
                         <h4 class="title font-weight-bold h1 mb-5">Contatti</h4>
                         <div class="contact-us-section mb-4">
-                            <i class="fa fa-map-marker mr-2"></i>
+                            <i class="fa fa-map-marker-alt mr-2"></i>
                             <div class="text-content">
                                 <h5 class="title font-weight-bold h4 mb-4">Indirizzo</h5>
                                 <p>Frazione Gombaz 12</p>
@@ -112,7 +117,7 @@
                             </div>
                         </div>
                         <div class="contact-us-section">
-                            <i class="fa fa-mobile mr-2"></i>
+                            <i class="fa fa-mobile-alt mr-2"></i>
                             <div class="text-content">
                                 <h5 class="title font-weight-bold">Chiamaci</h5>
                                 <p>Luigi Navoni</p>
@@ -129,17 +134,17 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-6">
-                                        <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Cognome e Nome" required>
+                                        <input type="text" class="form-control clear-values" name="name" aria-describedby="emailHelp" placeholder="Cognome e Nome" required>
                                     </div>
                                     <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control" name="recipient" aria-describedby="emailHelp" placeholder="Email" required>
+                                        <input type="email" class="form-control clear-values" name="recipient" aria-describedby="emailHelp" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" aria-describedby="emailHelp" placeholder="Oggetto" required>
+                                    <input type="text" class="form-control clear-values" name="subject" aria-describedby="emailHelp" placeholder="Oggetto" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="3" placeholder="Messaggio" required></textarea>
+                                    <textarea class="form-control clear-values" name="message" rows="3" placeholder="Messaggio" required></textarea>
                                 </div>
                                 <div class="form-group d-flex">
                                     <div class="g-recaptcha ml-auto" data-sitekey="6Ld9OIcaAAAAAPgGEgj2mtIMp3rPOSRKQ1mAYdYL"></div>
@@ -165,7 +170,7 @@
         </div>
         <div id="footer" class="row">
             <div class="col-md-12 bg-dark text-center text-muted">
-                <p class="p-3">made by <a href="https://ryanshanepalm.com" class="text-light">ryanshanepalm.com</a></p>
+                <p class="p-3 m-0">made by <a href="https://ryanshanepalm.com" target="_blank" class="text-light">ryanshanepalm.com</a></p>
             </div>
         </div>
     </div>
