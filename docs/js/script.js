@@ -26,6 +26,10 @@ $( document ).ready(function() {
     $("#contact form").on("submit", function(event){
         event.preventDefault();
 
+        const $spinner = $('#spinner .spinner-container');
+
+        $spinner.show()
+
         const url = 'https://api.navonigiardini.com/send/mail';
 
         const formValues= $(this).serializeArray();
@@ -46,9 +50,11 @@ $( document ).ready(function() {
             },
             success: function (data) {
                 $("#form-message").html("<div class=\"alert alert-success\">Thank you for your message</div>");
+                $spinner.hide();
             },
             error: function (data) {
                 $("#form-message").html("<div class=\"alert alert-danger\">Error</div>");
+                $spinner.hide();
             },
         });
     });

@@ -64,5 +64,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   transform: translateY(-25%); }
 
+#spinner {
+  display: inline-block;
+  vertical-align: middle; }
+  #spinner .spinner-container {
+    display: none; }
+
 #footer a {
   color: #3C4858; }
