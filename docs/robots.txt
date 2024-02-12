@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://navonigiardini.com/sitemap.xml
