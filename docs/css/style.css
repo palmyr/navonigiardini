@@ -61,15 +61,5 @@ h1, h2, h3, h4, h5, h6 {
 .item-linear-gradient {
   background: linear-gradient(60deg, #266A2E, #0C4D33); }
 
-#contact .form-title {
-  text-align: center;
-  transform: translateY(-25%); }
-
-#spinner {
-  display: inline-block;
-  vertical-align: middle; }
-  #spinner .spinner-container {
-    display: none; }
-
 #footer a {
   color: #3C4858; }

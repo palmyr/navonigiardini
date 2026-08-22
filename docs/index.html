@@ -19,7 +19,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -131,50 +130,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form method="post">
-                            <div class="form-items bg-light px-5 pb-4 rounded">
-                                <div class="form-title item-linear-gradient title rounded">
-                                    <h5 class="p-3 font-weight-bold">Scrivici</h5>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group col-lg-6">
-                                        <input type="text" class="form-control clear-values" name="name" aria-describedby="emailHelp" placeholder="Cognome e Nome" required>
-                                    </div>
-                                    <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control clear-values" name="recipient" aria-describedby="emailHelp" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control clear-values" name="subject" aria-describedby="emailHelp" placeholder="Oggetto" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control clear-values" name="message" rows="3" placeholder="Messaggio" required></textarea>
-                                </div>
-                                <div class="form-group d-flex">
-                                    <div class="g-recaptcha ml-auto" data-sitekey="6Ld9OIcaAAAAAPgGEgj2mtIMp3rPOSRKQ1mAYdYL"></div>
-                                </div>
-                                <div class="form-group text-right">
-                                    <div id="spinner" class="mr-3">
-                                        <div class="spinner-container">
-                                            <div class="spinner-border text-primary ml-3" role="status">
-                                                <span class="sr-only">Loading...</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <input type="submit" value="INVIA MESSAGGIO" class="btn btn-green">
-                                </div>
-                                <div id="form-message">
-
-                                </div>
+                        <div class="contact-us-section">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <div class="text-content">
+                                <h5 class="title font-weight-bold">Scrivici</h5>
+                                <p><a href="mailto:luigi.navoni@alice.it" class="text-light">luigi.navoni@alice.it</a></p>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="footer" class="row">
-            <div class="col-md-12 bg-dark text-center text-muted">
-                <p class="p-3 m-0">made by <a href="https://www.palmyr.xyz" target="_blank" class="text-light">www.palmyr.xyz</a></p>
             </div>
         </div>
     </div>
