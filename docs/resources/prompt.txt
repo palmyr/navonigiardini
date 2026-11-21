@@ -1,0 +1,3 @@
+I need to add a new page and a link to this page in the homepage.
+
+It needs to look like Poster_A3 (1).pdf but changing the name to Luigi Navoni. The image can be found at docs/resources/logo_fund_va.png.
